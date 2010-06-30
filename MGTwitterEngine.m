@@ -119,6 +119,9 @@
                                     requestType:(MGTwitterRequestType)requestType 
                                 queryParameters:(NSDictionary *)params;
 
+-(NSString *)_sendRequest:(NSURLRequest *)theRequest 
+		  withRequestType:(MGTwitterRequestType)requestType
+			 responseType:(MGTwitterResponseType)responseType;
 
 // Parsing methods
 - (void)_parseDataForConnection:(MGTwitterHTTPURLConnection *)connection;

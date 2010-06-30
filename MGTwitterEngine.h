@@ -229,8 +229,11 @@
 
 @interface MGTwitterEngine (BasicAuth)
 
-- (NSString *)username DEPRECATED_ATTRIBUTE;
-- (NSString *)password DEPRECATED_ATTRIBUTE;
+//- (NSString *)username DEPRECATED_ATTRIBUTE;
+//- (NSString *)password DEPRECATED_ATTRIBUTE;
+- (NSString *)username;
+- (NSString *)password;
+
 - (void)setUsername:(NSString *)username password:(NSString *)password DEPRECATED_ATTRIBUTE;
 
 @end
